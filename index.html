@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title> 
+    <!--   Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- DaisyUi Cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind Cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'button-bg': 'rgb(171, 239, 95)',
+                
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+         .manrope-font{
+            font-family: "Manrope", sans-serif;
+        }
+        </style>
+    
+</head>
+<body class="manrope-font">
+
+  <!-- Header Section  -->
+<header class="md:container mx-auto px-12 mt-8 mb-16">
+  <!-- Navbar  -->
+    <nav>
+      
+        <div class="navbar bg-base-100">
+            <div class="flex space-x-6 ml-8 items-center">
+              <div class="dropdown">
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>Services</a> </li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+
+              <a class="btn btn-ghost text-2xl font-extrabold"><i class="fa-solid fa-arrow-right pt-1 -rotate-45 w-8 h-8 bg-button-bg rounded-full"></i>Rinterio</a>
+           
+               <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-sm text-[#737373]">
+                  <li><a class="font-extrabold text-black">Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            
+              <div class="px-20 flex items-center space-x-4">
+                <div>
+                  <i class="fa-solid fa-magnifying-glass w-10 h-10 bg-white border pt-3 pl-2.5 rounded-full"></i>
+                </div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline w-10 h-10 bg-white border pt-1 pl-1 text-center rounded-full ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+                </div>
+             
+           <!-- Book Consult Button  -->
+            <div class="flex sm:flex-row">
+            <a class="btn bg-button-bg rounded-3xl text-black  font-extrabold ">Book Consult <i class="fa-solid fa-arrow-right text-white pt-2 -rotate-45 w-8 h-8 bg-black rounded-full"></i></a>
+            </div>
+            
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+           </div>
+            </div>
+  </div>
+</nav>
+<!-- Banner section  -->
+<div class="hero  ">
+  <div class="hero-content flex-col justify-center">
+    
+    <!-- Image -->
+    <img src="assets/banner.png" class="max-w-sm " alt="Image Above">
+    
+    <!-- Text Content -->
+    <div class="text-center">
+      <h1 class="text-6xl font-extrabold ml-12 text-[#212121]">A barn house of this design has a <br> striking appearance</h1>
+      <p class="py-6 font-semibold text-sm text-[#737373] ml-16">A barn house of this design commands attention with its striking appearance, seamlessly blending rustic charm with modern sophistication <br>  to create a  truly unique and captivating structure.</p>
+    
+      <button class="btn bg-[#ABEF5F80] rounded-3xl text-black  font-extrabold text-lg">View Details <i class="fa-solid fa-arrow-right text-black pt-2 -rotate-45 w-8 h-8 bg-button-bg rounded-full"></i></button>
+    </div>
+    </div>
+</div>
+</header>
+<main>
+  <!-- section-1  -->
+ <section class="bg-gray-100">
+
+ <div class="flex flex-col lg:flex-row items-center lg:items-start p-8 ">
+
+  <div>
+    <div>
+      <img  src="assets/Vector.png" alt="">
+    </div>
+  
+  
+  
+    <div class="flex flex-col mt-4 lg:flex-row ml-20 mt-2">
+     <!-- Left Section (Text and Buttons) -->
+     <div class="lg:w-1/2 space-y-4">
+      <!-- About Us Button -->
+
+   
+      <button class=" btn bg-white btn-sm rounded-full">
+        <i class="fa-solid fa-arrow-right"></i>About Us</button>
+    
+    
+    <!-- Main Heading -->
+    <h1 class="text-4xl font-extrabold text-black">
+      We design thoughtful,<br>
+       liveable spaces
+    </h1>
+
+    <!-- Subtext -->
+    <p class="text-gray-600 text-sm font-semibold">
+      Our approach to design is centered on creating spaces that are both thoughtful and liveable. We believe that every element of a space should serve a purpose, contributing to an environment.
+    </p>
+    
+   
+      <!-- Features Section -->
+      <div class="space-y-4">
+        <!-- Feature 1 -->
+        <div class="p-4 bg-white shadow-md rounded-lg flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <!-- Icon for Commercial -->
+            <svg class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+              <!-- Add your SVG icon here -->
+            </svg>
+          </div>
+          <div class="flex items-center ">
+            <!-- commercial image  -->
+            <div>
+              <img class="w-[70%]" src="assets/commercial.png" alt="">
+            </div>
+           <!-- Text-section  -->
+           <div>
+            <h2 class="text-lg font-extrabold text-[#494949]
+            ">Commercial</h2>
+            <p class="text-gray-600 text-sm font-semibold">This barn house offers a perfect blend of rustic charm and modern amenities.</p>
+           </div>
+          </div>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="p-4 bg-white shadow-md rounded-lg flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <!-- Icon for Residential -->
+            <svg class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+              <!-- Add your SVG icon here -->
+            </svg>
+          </div>
+          <div class="flex items-center">
+            <div>
+              <img class="w-[70%]" src="assets/residential.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-lg font-extrabold text-[#494949]">Residential</h2>
+              <p class="text-gray-600 text-sm font-semibold">As a residential retreat, this barn house offers a perfect blend of warmth and elegance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Section (Image) -->
+    <div class=" lg:w-1/2 lg:pl-8 mt-10 lg:mt-0">
+      <img src="assets/Rectangle.png" alt="Modern House" class=" w-full rounded-lg mt-4 shadow-lg lg:w-[80%]">
+    </div>
+  </div>
+  </div>
+</div>
+  
+<!-- section 2  -->
+<div class="p-8 w-[87%] mx-auto">
+  <!-- Button Section -->
+  <div class="text-center mb-4">
+    <button class="btn bg-white btn-sm rounded-full">
+      <i class="fa-solid fa-arrow-right"></i>How we works</button>
+  </div>
+   <!-- Title Section -->
+  <div class="text-center mb-4">
+    <h1 class="text-4xl font-extrabold text-black">Our Works Process</h1>
+    <p class="text-gray-600 text-sm font-semibold mt-2">
+      Our work process is designed to ensure seamless collaboration, combining creativity, <br>  precision, and efficiency at every stage, from concept to completion.
+    </p>
+  </div>
+
+  <!-- Process Cards Section -->
+  <div class="grid grid-cols-1 w-[60%] mx-auto lg:w-full lg:grid-cols-4 gap-4">
+    <!-- Concept Card -->
+    <div class="p-6 bg-[#E7C1D3] rounded-lg shadow-md ">
+      <div class="flex items-center mb-4">
+        <svg class="w-8 h-8 text-gray-800 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <!-- Add your SVG icon here -->
+        </svg>
+       <div>
+        <div>
+          <img  class="mb-2" src="assets/concept.png" alt="">
+        </div>
+        <div>
+          <h3 class="text-sm font-extrabold text-black">Concept</h3>
+      
+      <p class="text-gray-600 text-sm font-semibold ">
+        Our concept is rooted in the fusion of innovation and tradition, crafting designs.
+      </p>
+    </div>
+       </div>
+        </div>
+    </div>
+
+    <!-- Design Process Card -->
+    <div class="p-6 bg-[#EFDA6E] rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <svg class="w-8 h-8 text-gray-800 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <!-- Add your SVG icon here -->
+        </svg>
+        <div>
+          <div>
+            <img class="mb-2" src="assets/flow-chart.png" alt="">
+          </div>
+          <div>
+            <h3 class="text-sm font-extrabold text-black">Design Process</h3>
+        
+        <p class="text-gray-600 text-sm font-semibold ">
+          Our design process is a meticulous journey from inspiration to realization.
+      </div>
+         </div>
+          </div>
+    </div>
+
+    <!-- Supervision Card -->
+    <div class="p-6 bg-[#A4DAC3] rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <svg class="w-8 h-8 text-gray-800 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <!-- Add your SVG icon here -->
+        </svg>
+        <div>
+          <div>
+            <img class="mb-2" src="assets/vision.png" alt="">
+          </div>
+          <div>
+            <h3 class="text-sm font-extrabold text-black">Super Vision</h3>
+        
+        <p class="text-gray-600 text-xs font-semibold">
+          Through attentive supervision, we ensure that every aspect of the project is executed to the highest standards.
+        </p>
+      </div>
+         </div>
+    </div>
+</div>
+    <!-- Budget Planning Card -->
+    <div class="p-6 bg-[#77AAEA] rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <svg class="w-8 h-8 text-gray-800 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <!-- Add your SVG icon here -->
+        </svg>
+        <div>
+          <div>
+            <img class="mb-2" src="assets/budget-planning.png" alt="">
+          </div>
+          <div>
+            <h3 class="text-sm font-extrabold text-black">Budget Planing</h3>
+        
+        <p class="text-gray-600 text-sm font-semibold ">
+          Our budget planning is thorough and transparent, balancing cost efficiency.
+        </p>
+      </div>
+         </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container mx-auto p-5 mt-12">
+  <div class="text-center mb-8">
+    <button class="btn bg-[#ABEF5F80] rounded-3xl text-black font-bold text-sm"><i class="fa-solid fa-arrow-right text-black pt-.5"></i>Explore our Latest works </button>
+        <div class="mt-4">
+          <h1 class="text-3xl font-extrabold text-black">Our Latest Portfolio</h1>
+        <p class="mt-2 font-semibold text-sm text-[#737373] ">A Collection of Our Finest Work, Crafted with Passion and Precision.</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mx-24">
+
+        <!-- Portfolio Item 1 -->
+        <div class="card card-bordered col-span-1 lg:col-span-3 flex flex-col lg:flex-row p-4 items-center">
+            <div>
+              <img src="assets/img1.png" alt="Commercial" class="w-full lg:w-auto">
+            </div>
+            <div class="mt-0 lg:mt-0 lg:ml-6 ">
+              <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
+              <p class="font-semibold text-sm text-[#737373] mt-3">Our commercial services are designed to meet the unique needs of businesses, offering tailored solutions that drive growth and efficiency.</p>
+              <button class="text-black font-extrabold text-lg mt-2">View Details <i class="fa-solid fa-arrow-right text-black pt-2 -rotate-45 w-8 h-8 bg-button-bg rounded-full"></i></button>
+            </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+        <div class="card card-bordered flex p-4 items-center justify-center">
+          <div>
+            <img src="assets/img2.png" alt="Commercial" class="w-full lg:w-auto">
+          </div>
+        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="card card-bordered flex p-4 items-center justify-center">
+          <div>
+            <img src="assets/img3.png" alt="Commercial" class="w-full lg:w-auto">
+          </div>
+        </div>
+      <!--  Portfolio Item 4 -->
+      <div class="card card-bordered relative col-span-1 lg:col-span-3 flex flex-col lg:flex-row p-4 items-center w-[72%]">
+        <div>
+          <img src="assets/img4.png" alt="Commercial" class="w-full lg:w-auto">
+        </div>
+        <div class="mt-4  lg:mt-0 lg:ml-6">
+          <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
+          <p class="font-semibold text-sm text-[#737373] mt-3">Our commercial services are designed to meet the unique needs of businesses, offering tailored solutions that drive growth and efficiency.</p>
+          <button class="text-black font-extrabold text-lg mt-2">View Details <i class="fa-solid fa-arrow-right text-black pt-2 -rotate-45 w-8 h-8 bg-button-bg rounded-full"></i></button>
+        </div>
+      </div>
+      <!-- Portfolio Item 5 -->
+      <div class="card card-bordered lg:mt-[170px] ml-[846px] w-52 h-52 flex px-4 items-center justify-center absolute ">
+        <div>
+          <img src="assets/img5.png" alt="Commercial">
+        </div>
+        
+    </div>
+
+    </div>
+</div>
+</section>
+
+<section>
+  <div class="flex flex-col items-center justify-center p-8 bg-[url('/assets/bg.jpg')] bg-cover bg-no-repeat mb-2">
+    
+    <div class="text-center mb-2">
+      <button class="btn bg-[#ABEF5F80] rounded-3xl text-black font-bold text-sm"> <i class="fa-solid fa-arrow-right text-black pt-.5"></i>Let's Connect </button>
+      <div class="mt-4">
+        <h2 class="text-3xl font-extrabold text-black">Let's Discuss Next Project</h2>
+      <p class="font-semibold text-sm text-[#737373] mt-3">
+        This project will give us the opportunity to leverage our skills in mention relevant skills or areas, <br> while also exploring new techniques and strategies. 
+      </p>
+      </div>
+    </div>
+  
+    <!-- Form Section -->
+    <form class="w-full max-w-4xl p-8 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="First Name*"
+            class="input input-bordered rounded-full w-full"
+             />
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Last Name*"
+            class="input input-bordered rounded-full w-full"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Phone Number*"
+            class="input input-bordered rounded-full w-full"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="email"
+            placeholder="Email Number*"
+            class="input input-bordered rounded-full w-full"
+          />
+        </div>
+        <div class="form-control col-span-1 md:col-span-2">
+          <textarea
+            placeholder="Write your message here"
+            class="textarea textarea-bordered rounded-lg w-full"
+            rows="4"
+          ></textarea>
+        </div>
+      </div>
+  
+      <!-- Submit Button -->
+      <div class="mt-6 text-center">
+        <button class="btn bg-button-bg text-black font-extrabold w-full rounded-full text-lg">
+          Send Mail <i class="fa-solid fa-arrow-right text-white pt-2 -rotate-45 w-8 h-8 bg-black rounded-full"></i>
+        </button>
+        </div>
+    </form>
+  </div>
+  </section>
+</main>
+
+
+  <footer class="bg-[#1C1C1C] text-white py-10">
+    <div class="container mx-auto text-center mt-12">
+      <!-- Logo and Description -->
+      <div class="mb-8">
+      <h2 class="text-2xl font-bold"><i class="fa-solid fa-arrow-right pt-1 -rotate-45 w-8 h-8 bg-button-bg text-black rounded-full"></i> Rinterio</h2>
+        <p class="font-semibold text-sm text-[#737373] mt-4">we believe in the power of design to transform spaces into living experiences. <br> Our passion lies in creating interiors that not only look beautiful but also function seamlessly in daily life.
+        </p>
+      </div>
+  
+      <!-- lg:justify-center lg:space-x-24 lg:mb-8 lg:mt-10  -->
+
+      <!-- Navigation Links -->
+      <div class="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-20 mb-8 mt-10 justify-center">
+
+        <a href="#" class="text-gray-300 hover:text-white">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white">Services</a>
+        <a href="#" class="text-gray-300 hover:text-white">Portfolio</a>
+        <a href="#" class="text-gray-300 hover:text-white">Blogs</a>
+        <a href="#" class="text-gray-300 hover:text-white">Contact Us</a>
+</div>
+  
+      <!-- Call to Action Button -->
+   <button>
+    <a class="btn bg-button-bg rounded-3xl text-black font-extrabold mt-2 px-8 py-2">Book Consult <i class="fa-solid fa-arrow-right text-white pt-2 -rotate-45 w-8 h-8 bg-black rounded-full"></i></a>
+   </button>
+             
+            
+    </div>
+  </footer>
+  
+
+</body>
+</html>
